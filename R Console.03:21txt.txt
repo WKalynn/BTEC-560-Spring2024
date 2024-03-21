@@ -1,0 +1,42 @@
+
+R version 4.3.2 (2023-10-31) -- "Eye Holes"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.80 (8281) aarch64-apple-darwin20]
+
+[Workspace restored from /Users/kalynnwesby/.RData]
+[History restored from /Users/kalynnwesby/.Rapp.history]
+
+> rnorm(10)
+ [1] -0.9343878 -0.2232450 -1.1435868 -0.1632208 -2.6046698 -1.2044917  0.5994497 -1.4225949  1.3746512 -0.9297688
+> x=rnorm(10)
+> y=rnorm(10)
+> t.test(x,y)
+
+	Welch Two Sample t-test
+
+data:  x and y
+t = 0.53729, df = 13.497, p-value = 0.5998
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.8765604  1.4597963
+sample estimates:
+ mean of x  mean of y 
+ 0.0315952 -0.2600228 
+
+> 
