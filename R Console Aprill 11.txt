@@ -1,0 +1,64 @@
+
+R version 4.3.2 (2023-10-31) -- "Eye Holes"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.80 (8281) aarch64-apple-darwin20]
+
+[Workspace restored from /Users/kalynnwesby/.RData]
+[History restored from /Users/kalynnwesby/.Rapp.history]
+
+> data_frame <-read.csv("https://goo.gl/j61RXD")
+Error in file(file, "rt") : 
+  cannot open the connection to 'https://goo.gl/j61RXD'
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open URL 'https://goo.gl/j61RXD': HTTP status was '404 Not Found'
+> #Read your sample dataset
+> data_frame <- read.csv("https://goo.gl/j61RXD")
+Error in file(file, "rt") : 
+  cannot open the connection to 'https://goo.gl/j61RXD'
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open URL 'https://goo.gl/j61RXD': HTTP status was '404 Not Found'
+> data_frame <- read.csv("https://goo.gl/j61RXD")
+Error in file(file, "rt") : 
+  cannot open the connection to 'https://goo.gl/j61RXD'
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open URL 'https://goo.gl/j61RXD': HTTP status was '404 Not Found'
+> data_frame <- read.csv("https://goo.gl/j6lRXD")
+> table(data_frame$treatment,data_frame$improvement)
+             
+              improved not-improved
+  not-treated       26           29
+  treated           35           15
+> chisq.test(data_frame$treatment,data_frame$improvement,correct=FALSE)
+
+	Pearson's Chi-squared test
+
+data:  data_frame$treatment and data_frame$improvement
+X-squared = 5.5569, df = 1, p-value = 0.01841
+
+> chisq.test(data_frame$treatment,data_frame$improvement)
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  data_frame$treatment and data_frame$improvement
+X-squared = 4.6626, df = 1, p-value = 0.03083
+
+> 
